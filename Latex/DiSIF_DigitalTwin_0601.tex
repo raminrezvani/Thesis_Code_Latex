@@ -1201,10 +1201,55 @@ ment. Heavy computational tasks, such as traffic prediction and
 anomaly detection, are executed periodically or on-demand us
 ing both historical data and continuous streams from the Fog
 layer. Traffic prediction, for example, forecasts congestion and
-f
-low patterns across various city locations, providing critical
+flow patterns across various city locations, providing critical
 insights for proactive traffic management and urban planning
 within the Digital Twin environment.
+
+\subsection{EdgeAI}
+
+\subsubsection{Role of EdgeAI in Edge Layer and Horizontal Fusion}
+
+EdgeAI, powered by Small Language Models (SmallLLMs),
+ plays a crucial role in optimizing the processing of real-time data streams 
+ within the edge layer of the DiSIF framework. In this layer, EdgeAI is integrated into
+  the Multi-Agent System (MAS) to enhance horizontal fusion, where the master
+   agent leverages its capabilities to decompose complex queries into independent sub-queries.
+    These sub-queries are tailored to specific data streams, such as
+     traffic sensor inputs or weather data, and distributed across worker agents for
+      parallel execution. The results from these sub-queries are then
+       returned to the master agent, where EdgeAI generates a consolidated query to
+        aggregate the outputs, producing a final response. This intelligent
+         decomposition and aggregation process significantly boosts processing speed
+          and efficiency, aligning with the real-time demands of Digital Twins of Cities.
+
+\subsubsection{Role of EdgeAI in Vertical Fusion Across Layers}
+
+In the context of vertical fusion across the JDL layers,
+ EdgeAI facilitates seamless query transformation by utilizing the ConceptOnto ontology. 
+ It enables the rewriting of queries between layers, for instance,
+  converting situation refinement queries from the fog layer into object
+   refinement queries for the edge layer, and vice versa. This bidirectional
+    process—occurring from edge to fog and fog to cloud—ensures the
+     preservation of semantic coherence across the distributed architecture. 
+     EdgeAI optimizes this query rewriting by adapting to the specific needs
+      and computational capacities of each layer, thereby enhancing the
+       framework's ability to maintain consistent and meaningful data integration
+        throughout the hierarchical structure of DiSIF.
+
+\subsubsection{Advantages of EdgeAI in DiSIF}
+
+The incorporation of EdgeAI into DiSIF offers several key advantages.
+ Firstly, it reduces latency through intelligent local processing, enabling
+  rapid response times critical for real-time urban applications. Secondly,
+   it improves scalability by supporting parallel and distributed fusion processes,
+    allowing the framework to handle high-volume data streams efficiently.
+     Lastly, EdgeAI strengthens privacy by limiting the transmission of raw data, 
+     relying instead on SmallLLMs for initial processing at the edge, which aligns 
+     with DiSIF’s privacy-preserving design and addresses the security concerns
+      associated with centralized data handling in Digital Twins of Cities.
+
+
+
 
 
 \subsection{Query Management: Ensuring the Real-Time Viability of the Digital Twin}
