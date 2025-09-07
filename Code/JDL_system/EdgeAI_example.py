@@ -63,7 +63,7 @@ try:
   response = requests.post(
     url="https://openrouter.ai/api/v1/chat/completions",
     headers={
-      "Authorization": "Bearer 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",
+      "Authorization": "Bearer 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",
       "Content-Type": "application/json",
       "HTTP-Referer": "<YOUR_SITE_URL>", # Optional. Site URL for rankings on openrouter.ai.
       "X-Title": "<YOUR_SITE_NAME>", # Optional. Site title for rankings on openrouter.ai.
