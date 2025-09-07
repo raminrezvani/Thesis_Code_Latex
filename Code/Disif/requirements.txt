@@ -1,0 +1,48 @@
+# Smart Traffic Digital Twin System Requirements
+# Core dependencies for the Digital Twin MAS system
+
+# RDF and Semantic Web
+rdflib>=6.0.0
+rdflib-jsonld>=0.6.0
+
+# Data processing and analysis
+pandas>=1.3.0
+numpy>=1.21.0
+
+# Date and time handling
+python-dateutil>=2.8.0
+
+# JSON processing
+jsonschema>=3.2.0
+
+# Logging and monitoring
+colorlog>=6.6.0
+
+# Optional: For enhanced performance
+# cython>=0.29.0
+# numba>=0.56.0
+
+# Optional: For data visualization
+# matplotlib>=3.4.0
+# seaborn>=0.11.0
+
+# Optional: For machine learning integration
+# scikit-learn>=1.0.0
+# tensorflow>=2.6.0
+
+# Optional: For web interface
+# flask>=2.0.0
+# dash>=2.0.0
+
+# Optional: For database integration
+# sqlalchemy>=1.4.0
+# psycopg2-binary>=2.9.0
+
+# Optional: For cloud deployment
+# boto3>=1.18.0
+# azure-storage-blob>=12.0.0
+
+# Development and testing
+pytest>=6.2.0
+black>=21.0.0
+flake8>=3.9.0

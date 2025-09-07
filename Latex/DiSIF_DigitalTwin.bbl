@@ -1,0 +1,105 @@
+\begin{thebibliography}{10}
+
+\bibitem{Abbas2018MobileEC}
+Nasir Abbas, Yan Zhang, Amir Taherkordi, and T~Skeie.
+\newblock {Mobile Edge Computing: A Survey}.
+\newblock {\em IEEE Internet of Things Journal}, 5:450--465, 2018.
+
+\bibitem{Ahmed2017BringingCC}
+E~Ahmed, A~Ahmed, Ibrar Yaqoob, Junaid Shuja, A~Gani, Muhammad Imran, and
+  Muhammad Shoaib.
+\newblock {Bringing Computation Closer toward the User Network: Is Edge
+  Computing the Solution?}
+\newblock {\em IEEE Communications Magazine}, 55:138--144, 2017.
+
+\bibitem{Al-Baltah2020}
+Ibrahim~Ahmed Al-Baltah, Abdul~Azim {Abd Ghani}, Ghilan~Mohammed Al-Gomaei,
+  Fua'ad~Hassan Abdulrazzak, and Abdulmonem~Ali {Al Kharusi}.
+\newblock {A scalable semantic data fusion framework for heterogeneous sensors
+  data}.
+\newblock {\em Journal of Ambient Intelligence and Humanized Computing}, pages
+  1--20, 2020.
+
+\bibitem{Arkian2017}
+Hamid~Reza Arkian, Abolfazl Diyanat, and Atefe Pourkhalili.
+\newblock {MIST: Fog-based data analytics scheme with cost-efficient resource
+  provisioning for IoT crowdsensing applications}.
+\newblock {\em Journal of Network and Computer Applications}, 82:152--165,
+  2017.
+
+\bibitem{Baccarelli2017FogOE}
+E~Baccarelli, P~Naranjo, M~Scarpiniti, Mohammad Shojafar, and J~Abawajy.
+\newblock {Fog of Everything: Energy-Efficient Networked Computing
+  Architectures, Research Challenges, and a Case Study}.
+\newblock {\em IEEE Access}, 5:9882--9910, 2017.
+
+\bibitem{Dastjerdi2016}
+Amir~Vahid Dastjerdi, Harshit Gupta, Rodrigo~N Calheiros, Soumya~K Ghosh, and
+  Rajkumar Buyya.
+\newblock {Fog computing: Principles, architectures, and applications}.
+\newblock In {\em Internet of things}, pages 61--75. Elsevier, 2016.
+
+\bibitem{Garca2011ExploringTL}
+V{\'{i}}ctor~Delgado Garc{\'{i}}a.
+\newblock {Exploring the limits of cloud computing}.
+\newblock 2011.
+
+\bibitem{Giordano2016SmartAA}
+A~Giordano, G~Spezzano, and A~Vinci.
+\newblock {Smart Agents and Fog Computing for Smart City Applications}.
+\newblock In {\em Smart-CT}, 2016.
+
+\bibitem{Hall1997}
+David~L Hall and James Llinas.
+\newblock {An introduction to multisensor data fusion}.
+\newblock {\em Proceedings of the IEEE}, 85(1):6--23, 1997.
+
+\bibitem{Hu2017SurveyOF}
+Pengfei Hu, Sahraoui Dhelim, H~Ning, and T~Qiu.
+\newblock {Survey on fog computing: architecture, key technologies,
+  applications and open issues}.
+\newblock {\em J. Netw. Comput. Appl.}, 98:27--42, 2017.
+
+\bibitem{Perera2017FogCF}
+Charith Perera, Yongrui Qin, J~C Estrella, S~Reiff-Marganiec, and A~Vasilakos.
+\newblock {Fog Computing for Sustainable Smart Cities: A Survey}.
+\newblock {\em arXiv: Networking and Internet Architecture}, 2017.
+
+\bibitem{Rahman2019BlockchainAI}
+M~A Rahman, M~Rashid, M~Hossain, E~Hassanain, Mohammed~F Alhamid, and
+  M~Guizani.
+\newblock {Blockchain and IoT-Based Cognitive Edge Framework for Sharing
+  Economy Services in a Smart City}.
+\newblock {\em IEEE Access}, 7:18611--18621, 2019.
+
+\bibitem{Samadian2014}
+Soroush Samadian, Bruce McManus, and Mark~D Wilkinson.
+\newblock {Automatic detection and resolution of measurement-unit conflicts in
+  aggregated data}.
+\newblock {\em BMC medical genomics}, 7(1):1--8, 2014.
+
+\bibitem{Shi2016EdgeCV}
+W~Shi, J~Cao, Q~Zhang, Y~Li, and Lanyu Xu.
+\newblock {Edge Computing: Vision and Challenges}.
+\newblock {\em IEEE Internet of Things Journal}, 3:637--646, 2016.
+
+\bibitem{TULI201922}
+Shreshth Tuli, Redowan Mahmud, Shikhar Tuli, and Rajkumar Buyya.
+\newblock {FogBus: A Blockchain-based Lightweight Framework for Edge and Fog
+  Computing}.
+\newblock {\em Journal of Systems and Software}, 154:22--36, 2019.
+
+\bibitem{Wang2017}
+Feng Wang, Liang Hu, Jin Zhou, Jiejun Hu, and Kuo Zhao.
+\newblock {A semantics-based approach to multi-source heterogeneous information
+  fusion in the internet of things}.
+\newblock {\em Soft Computing}, 21(8):2005--2013, 2017.
+
+\bibitem{Zafeiropoulos2008}
+Anastasios Zafeiropoulos, Nikolaos Konstantinou, Stamatios Arkoulis,
+  Dimitrios-Emmanuel Spanos, and Nikolas Mitrou.
+\newblock {A semantic-based architecture for sensor data fusion}.
+\newblock In {\em 2008 The Second International Conference on Mobile Ubiquitous
+  Computing, Systems, Services and Technologies}, pages 116--121. IEEE, 2008.
+
+\end{thebibliography}

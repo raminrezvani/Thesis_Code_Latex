@@ -1,0 +1,79 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: DiSIF_DigitalTwin_0601.aux
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+The style file: plain.bst
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Database file #1: thesis_bib.bib
+Warning--I didn't find a database entry for "noughabi2013semfus"
+Warning--I didn't find a database entry for "article28"
+Warning--I didn't find a database entry for "inproceedings31"
+Warning--I didn't find a database entry for "article32"
+Warning--I didn't find a database entry for "inproceedings33"
+Warning--I didn't find a database entry for "article35"
+Warning--I didn't find a database entry for "belcao2020streaming"
+Warning--I didn't find a database entry for "zappatore2023semantic"
+Warning--I didn't find a database entry for "GHEISARI20211"
+Warning--I didn't find a database entry for "de2023spatio"
+Warning--I didn't find a database entry for "inproceedings61"
+Warning--I didn't find a database entry for "article63"
+Warning--I didn't find a database entry for "ortiz2022atmosphere"
+Warning--I didn't find a database entry for "bonte2023towards"
+Warning--I didn't find a database entry for "XHAFA2020730"
+Warning--I didn't find a database entry for "SELLAMI202464"
+Warning--I didn't find a database entry for "anicic2011ep"
+Warning--I didn't find a database entry for "komazec2012sparkwave"
+Warning--I didn't find a database entry for "rinne2012instans"
+Warning--I didn't find a database entry for "barbieri2010c"
+Warning--I didn't find a database entry for "le2011native"
+Warning--I didn't find a database entry for "dia2018drss"
+Warning--I didn't find a database entry for "le2013elastic"
+Warning--I didn't find a database entry for "calbimonte2010enabling"
+Warning--I didn't find a database entry for "mebrek2020stream"
+Warning--I didn't find a database entry for "gillani2016dionysus"
+Warning--I didn't find a database entry for "khrouf2016waves"
+Warning--I didn't find a database entry for "calbimonte2016query"
+Warning--I didn't find a database entry for "de2024enabling"
+Warning--empty booktitle in Garca2011ExploringTL
+You've used 17 entries,
+            2118 wiz_defined-function locations,
+            647 strings with 8146 characters,
+and the built_in function-call counts, 6817 in all, are:
+= -- 662
+> -- 410
+< -- 3
++ -- 161
+- -- 144
+* -- 533
+:= -- 1157
+add.period$ -- 53
+call.type$ -- 17
+change.case$ -- 123
+chr.to.int$ -- 0
+cite$ -- 18
+duplicate$ -- 219
+empty$ -- 464
+format.name$ -- 144
+if$ -- 1377
+int.to.chr$ -- 0
+int.to.str$ -- 17
+missing$ -- 17
+newline$ -- 88
+num.names$ -- 34
+pop$ -- 115
+preamble$ -- 1
+purify$ -- 106
+quote$ -- 0
+skip$ -- 145
+stack$ -- 0
+substring$ -- 426
+swap$ -- 40
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 68
+warning$ -- 1
+while$ -- 65
+width$ -- 19
+write$ -- 187
+(There were 30 warnings)
