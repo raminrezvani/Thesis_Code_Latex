@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.11.23)  7 SEP 2025 11:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.11.23)  8 SEP 2025 12:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -882,31 +882,31 @@ File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
 LaTeX Font Info:    Font shape `T1/txr/b/n' in size <10> not available
 (Font)              Font shape `T1/txr/bx/n' tried instead on input line 36.
-LaTeX Font Info:    Trying to load font information for OT1+txr on input line 55.
+LaTeX Font Info:    Trying to load font information for OT1+txr on input line 65.
  (C:\Users\ramin\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txmia on input line 55.
+LaTeX Font Info:    Trying to load font information for U+txmia on input line 65.
  (C:\Users\ramin\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 55.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 65.
  (C:\Users\ramin\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (C:\Users\ramin\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 55.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 65.
  (C:\Users\ramin\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (C:\Users\ramin\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+txsyc on input line 55.
+LaTeX Font Info:    Trying to load font information for U+txsyc on input line 65.
  (C:\Users\ramin\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 55.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 65.
  (C:\Users\ramin\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
@@ -919,166 +919,167 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 ]
 
-Package natbib Warning: Citation `noughabi2013semfus' on page 2 undefined on input line 145.
+Package natbib Warning: Citation `noughabi2013semfus' on page 2 undefined on input line 174.
 
-LaTeX Font Info:    Trying to load font information for TS1+txr on input line 171.
+LaTeX Font Info:    Trying to load font information for TS1+txr on input line 200.
 (C:\Users\ramin\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 ) [2]
-Overfull \hbox (1.8011pt too wide) in paragraph at lines 229--234
+Overfull \hbox (1.8011pt too wide) in paragraph at lines 268--273
 \T1/txr/m/n/10 (-20) the-siz-ing high-level in-sights for macro-level decision-
  []
 
-<Semantic_JDL.jpg, id=18, 434.8245pt x 411.33675pt>
+[3]
+<Semantic_JDL.jpg, id=21, 434.8245pt x 411.33675pt>
 File: Semantic_JDL.jpg Graphic file (type jpg)
 <use Semantic_JDL.jpg>
-Package pdftex.def Info: Semantic_JDL.jpg  used on input line 361.
+Package pdftex.def Info: Semantic_JDL.jpg  used on input line 412.
 (pdftex.def)             Requested size: 252.0pt x 238.39346pt.
 LaTeX Font Info:    Font shape `T1/txr/b/n' in size <8> not available
-(Font)              Font shape `T1/txr/bx/n' tried instead on input line 362.
+(Font)              Font shape `T1/txr/bx/n' tried instead on input line 413.
 
-Package natbib Warning: Citation `noughabi2013semfus' on page 3 undefined on input line 362.
 
+Package natbib Warning: Citation `noughabi2013semfus' on page 4 undefined on input line 413.
 
-Package natbib Warning: Citation `noughabi2013semfus' on page 3 undefined on input line 362.
 
+Package natbib Warning: Citation `noughabi2013semfus' on page 4 undefined on input line 413.
 
-Package natbib Warning: Citation `noughabi2013semfus' on page 3 undefined on input line 367.
 
-[3 <./Semantic_JDL.jpg>]
+Package natbib Warning: Citation `noughabi2013semfus' on page 4 undefined on input line 418.
 
-Package natbib Warning: Citation `article28' on page 4 undefined on input line 387.
 
+Package natbib Warning: Citation `article28' on page 4 undefined on input line 438.
 
-Package natbib Warning: Citation `inproceedings31' on page 4 undefined on input line 399.
+[4 <./Semantic_JDL.jpg>]
 
+Package natbib Warning: Citation `inproceedings31' on page 5 undefined on input line 450.
 
-Package natbib Warning: Citation `article32' on page 4 undefined on input line 402.
 
+Package natbib Warning: Citation `article32' on page 5 undefined on input line 453.
 
-Package natbib Warning: Citation `inproceedings33' on page 4 undefined on input line 405.
 
+Package natbib Warning: Citation `inproceedings33' on page 5 undefined on input line 456.
 
-Package natbib Warning: Citation `article35' on page 4 undefined on input line 415.
 
+Package natbib Warning: Citation `article35' on page 5 undefined on input line 466.
 
-Package natbib Warning: Citation `belcao2020streaming' on page 4 undefined on input line 422.
 
+Package natbib Warning: Citation `belcao2020streaming' on page 5 undefined on input line 473.
 
-Package natbib Warning: Citation `zappatore2023semantic' on page 4 undefined on input line 430.
 
+Package natbib Warning: Citation `zappatore2023semantic' on page 5 undefined on input line 481.
 
-Package natbib Warning: Citation `GHEISARI20211' on page 4 undefined on input line 435.
 
+Package natbib Warning: Citation `GHEISARI20211' on page 5 undefined on input line 486.
 
-Package natbib Warning: Citation `de2023spatio' on page 4 undefined on input line 438.
 
-[4]
+Package natbib Warning: Citation `de2023spatio' on page 5 undefined on input line 489.
 
-Package natbib Warning: Citation `inproceedings61' on page 5 undefined on input line 467.
 
+Package natbib Warning: Citation `inproceedings61' on page 5 undefined on input line 518.
 
-Package natbib Warning: Citation `article63' on page 5 undefined on input line 474.
 
+Package natbib Warning: Citation `article63' on page 5 undefined on input line 525.
 
-Package natbib Warning: Citation `ortiz2022atmosphere' on page 5 undefined on input line 478.
 
+Package natbib Warning: Citation `ortiz2022atmosphere' on page 5 undefined on input line 529.
 
-Package natbib Warning: Citation `bonte2023towards' on page 5 undefined on input line 479.
 
+Package natbib Warning: Citation `bonte2023towards' on page 5 undefined on input line 530.
 
-Package natbib Warning: Citation `XHAFA2020730' on page 5 undefined on input line 480.
 
+Package natbib Warning: Citation `XHAFA2020730' on page 5 undefined on input line 531.
 
-Package natbib Warning: Citation `SELLAMI202464' on page 5 undefined on input line 481.
 
+Package natbib Warning: Citation `SELLAMI202464' on page 5 undefined on input line 532.
 
-Package natbib Warning: Citation `anicic2011ep' on page 5 undefined on input line 491.
 
+Package natbib Warning: Citation `anicic2011ep' on page 5 undefined on input line 542.
 
-Package natbib Warning: Citation `komazec2012sparkwave' on page 5 undefined on input line 491.
 
+Package natbib Warning: Citation `komazec2012sparkwave' on page 5 undefined on input line 542.
 
-Package natbib Warning: Citation `rinne2012instans' on page 5 undefined on input line 491.
 
+Package natbib Warning: Citation `rinne2012instans' on page 5 undefined on input line 542.
 
-Package natbib Warning: Citation `barbieri2010c' on page 5 undefined on input line 492.
 
+Package natbib Warning: Citation `barbieri2010c' on page 5 undefined on input line 543.
 
-Package natbib Warning: Citation `le2011native' on page 5 undefined on input line 492.
 
-
-Package natbib Warning: Citation `dia2018drss' on page 5 undefined on input line 494.
-
-
-Package natbib Warning: Citation `le2013elastic' on page 5 undefined on input line 495.
-
-
-Package natbib Warning: Citation `barbieri2010c' on page 5 undefined on input line 498.
-
-
-Package natbib Warning: Citation `calbimonte2010enabling' on page 5 undefined on input line 498.
-
-
-Package natbib Warning: Citation `komazec2012sparkwave' on page 5 undefined on input line 498.
-
-
-Package natbib Warning: Citation `mebrek2020stream' on page 5 undefined on input line 502.
-
-
-Package natbib Warning: Citation `gillani2016dionysus' on page 5 undefined on input line 510.
-
-
-Package natbib Warning: Citation `le2013elastic' on page 5 undefined on input line 510.
-
-
-Package natbib Warning: Citation `dia2018drss' on page 5 undefined on input line 516.
-
-
-Package natbib Warning: Citation `khrouf2016waves' on page 5 undefined on input line 520.
-
-
-Package natbib Warning: Citation `calbimonte2016query' on page 5 undefined on input line 524.
-
-
-Package natbib Warning: Citation `de2024enabling' on page 5 undefined on input line 530.
+Package natbib Warning: Citation `le2011native' on page 5 undefined on input line 543.
 
 [5]
 
-Package natbib Warning: Citation `inproceedings31' on page 6 undefined on input line 587.
+Package natbib Warning: Citation `dia2018drss' on page 6 undefined on input line 545.
 
 
-Package natbib Warning: Citation `article32' on page 6 undefined on input line 587.
+Package natbib Warning: Citation `le2013elastic' on page 6 undefined on input line 546.
 
 
-Package natbib Warning: Citation `article28' on page 6 undefined on input line 587.
+Package natbib Warning: Citation `barbieri2010c' on page 6 undefined on input line 549.
 
 
-Package natbib Warning: Citation `inproceedings33' on page 6 undefined on input line 587.
+Package natbib Warning: Citation `calbimonte2010enabling' on page 6 undefined on input line 549.
 
 
-Package natbib Warning: Citation `article35' on page 6 undefined on input line 587.
+Package natbib Warning: Citation `komazec2012sparkwave' on page 6 undefined on input line 549.
 
 
-Package natbib Warning: Citation `khrouf2016waves' on page 6 undefined on input line 587.
+Package natbib Warning: Citation `mebrek2020stream' on page 6 undefined on input line 553.
 
 
-Package natbib Warning: Citation `calbimonte2016query' on page 6 undefined on input line 587.
+Package natbib Warning: Citation `gillani2016dionysus' on page 6 undefined on input line 561.
 
 
-Package natbib Warning: Citation `dia2018drss' on page 6 undefined on input line 587.
+Package natbib Warning: Citation `le2013elastic' on page 6 undefined on input line 561.
 
 
-Package natbib Warning: Citation `article63' on page 6 undefined on input line 587.
+Package natbib Warning: Citation `dia2018drss' on page 6 undefined on input line 567.
 
 
-Package natbib Warning: Citation `mebrek2020stream' on page 6 undefined on input line 587.
+Package natbib Warning: Citation `khrouf2016waves' on page 6 undefined on input line 571.
 
 
-Package natbib Warning: Citation `ortiz2022atmosphere' on page 6 undefined on input line 587.
+Package natbib Warning: Citation `calbimonte2016query' on page 6 undefined on input line 575.
 
 
-Package natbib Warning: Citation `bonte2023towards' on page 6 undefined on input line 587.
+Package natbib Warning: Citation `de2024enabling' on page 6 undefined on input line 581.
+
+
+Package natbib Warning: Citation `inproceedings31' on page 6 undefined on input line 638.
+
+
+Package natbib Warning: Citation `article32' on page 6 undefined on input line 638.
+
+
+Package natbib Warning: Citation `article28' on page 6 undefined on input line 638.
+
+
+Package natbib Warning: Citation `inproceedings33' on page 6 undefined on input line 638.
+
+
+Package natbib Warning: Citation `article35' on page 6 undefined on input line 638.
+
+
+Package natbib Warning: Citation `khrouf2016waves' on page 6 undefined on input line 638.
+
+
+Package natbib Warning: Citation `calbimonte2016query' on page 6 undefined on input line 638.
+
+
+Package natbib Warning: Citation `dia2018drss' on page 6 undefined on input line 638.
+
+
+Package natbib Warning: Citation `article63' on page 6 undefined on input line 638.
+
+
+Package natbib Warning: Citation `mebrek2020stream' on page 6 undefined on input line 638.
+
+
+Package natbib Warning: Citation `ortiz2022atmosphere' on page 6 undefined on input line 638.
+
+
+Package natbib Warning: Citation `bonte2023towards' on page 6 undefined on input line 638.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1089,7 +1090,7 @@ pdfTeX warning: pdflatex (file ./AllinOneFrameWork_modified.drawio.pdf): PDF inc
 <AllinOneFrameWork_modified.drawio.pdf, id=28, 854.23138pt x 980.70387pt>
 File: AllinOneFrameWork_modified.drawio.pdf Graphic file (type pdf)
 <use AllinOneFrameWork_modified.drawio.pdf>
-Package pdftex.def Info: AllinOneFrameWork_modified.drawio.pdf  used on input line 608.
+Package pdftex.def Info: AllinOneFrameWork_modified.drawio.pdf  used on input line 659.
 (pdftex.def)             Requested size: 252.0pt x 289.30513pt.
 
 
@@ -1097,178 +1098,183 @@ pdfTeX warning: pdflatex (file ./Overall_Framework_Communication_OK.drawio.pdf):
 <Overall_Framework_Communication_OK.drawio.pdf, id=29, 1187.39606pt x 225.7233pt>
 File: Overall_Framework_Communication_OK.drawio.pdf Graphic file (type pdf)
 <use Overall_Framework_Communication_OK.drawio.pdf>
-Package pdftex.def Info: Overall_Framework_Communication_OK.drawio.pdf  used on input line 643.
+Package pdftex.def Info: Overall_Framework_Communication_OK.drawio.pdf  used on input line 694.
 (pdftex.def)             Requested size: 522.0pt x 99.23244pt.
-
+[6 <./AllinOneFrameWork_modified.drawio.pdf>]
 
 pdfTeX warning: pdflatex (file ./h3_new.drawio.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<h3_new.drawio.pdf, id=30, 1013.70718pt x 724.62718pt>
+<h3_new.drawio.pdf, id=55, 1013.70718pt x 724.62718pt>
 File: h3_new.drawio.pdf Graphic file (type pdf)
 <use h3_new.drawio.pdf>
-Package pdftex.def Info: h3_new.drawio.pdf  used on input line 721.
+Package pdftex.def Info: h3_new.drawio.pdf  used on input line 772.
 (pdftex.def)             Requested size: 252.0pt x 180.12805pt.
 
 
 pdfTeX warning: pdflatex (file ./EdgeLayer_New.drawio.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<EdgeLayer_New.drawio.pdf, id=31, 876.1533pt x 399.41219pt>
+<EdgeLayer_New.drawio.pdf, id=56, 876.1533pt x 399.41219pt>
 File: EdgeLayer_New.drawio.pdf Graphic file (type pdf)
 <use EdgeLayer_New.drawio.pdf>
-Package pdftex.def Info: EdgeLayer_New.drawio.pdf  used on input line 755.
+Package pdftex.def Info: EdgeLayer_New.drawio.pdf  used on input line 806.
 (pdftex.def)             Requested size: 252.0pt x 114.87581pt.
 
 
 pdfTeX warning: pdflatex (file ./FogLayer_New.drawio.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<FogLayer_New.drawio.pdf, id=32, 912.2883pt x 406.3983pt>
+<FogLayer_New.drawio.pdf, id=57, 912.2883pt x 406.3983pt>
 File: FogLayer_New.drawio.pdf Graphic file (type pdf)
 <use FogLayer_New.drawio.pdf>
-Package pdftex.def Info: FogLayer_New.drawio.pdf  used on input line 762.
+Package pdftex.def Info: FogLayer_New.drawio.pdf  used on input line 813.
 (pdftex.def)             Requested size: 252.0pt x 112.25906pt.
 
 
 pdfTeX warning: pdflatex (file ./Communication_new.drawio.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Communication_new.drawio.pdf, id=33, 809.9058pt x 407.60278pt>
+<Communication_new.drawio.pdf, id=58, 809.9058pt x 407.60278pt>
 File: Communication_new.drawio.pdf Graphic file (type pdf)
 <use Communication_new.drawio.pdf>
-Package pdftex.def Info: Communication_new.drawio.pdf  used on input line 770.
+Package pdftex.def Info: Communication_new.drawio.pdf  used on input line 821.
 (pdftex.def)             Requested size: 252.0pt x 126.822pt.
-[6 <./AllinOneFrameWork_modified.drawio.pdf>] [7 <./Overall_Framework_Communication_OK.drawio.pdf> <./h3_new.drawio.pdf> <./EdgeLayer_New.drawio.pdf>] [8 <./FogLayer_New.drawio.pdf> <./Communication_new.drawio.pdf>] [9]
+[7 <./Overall_Framework_Communication_OK.drawio.pdf> <./h3_new.drawio.pdf>] [8 <./EdgeLayer_New.drawio.pdf> <./FogLayer_New.drawio.pdf> <./Communication_new.drawio.pdf>] [9]
+Overfull \hbox (2.5349pt too wide) in paragraph at lines 1223--1234
+[]\T1/txr/m/n/10 (-20) In the con-text of ver-ti-cal fu-sion across the JDL lay-ers, EdgeAI
+ []
+
+[10]
 
 pdfTeX warning: pdflatex (file ./ConceptOnto_GraphViz_new.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<ConceptOnto_GraphViz_new.pdf, id=150, 733.74126pt x 784.9325pt>
+<ConceptOnto_GraphViz_new.pdf, id=153, 733.74126pt x 784.9325pt>
 File: ConceptOnto_GraphViz_new.pdf Graphic file (type pdf)
 <use ConceptOnto_GraphViz_new.pdf>
-Package pdftex.def Info: ConceptOnto_GraphViz_new.pdf  used on input line 1259.
+Package pdftex.def Info: ConceptOnto_GraphViz_new.pdf  used on input line 1355.
 (pdftex.def)             Requested size: 252.0pt x 269.58034pt.
 
 
 pdfTeX warning: pdflatex (file ./cityOnto_graph.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<cityOnto_graph.pdf, id=151, 922.44624pt x 402.50375pt>
+<cityOnto_graph.pdf, id=154, 922.44624pt x 402.50375pt>
 File: cityOnto_graph.pdf Graphic file (type pdf)
 <use cityOnto_graph.pdf>
-Package pdftex.def Info: cityOnto_graph.pdf  used on input line 1272.
+Package pdftex.def Info: cityOnto_graph.pdf  used on input line 1368.
 (pdftex.def)             Requested size: 261.0pt x 113.88562pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 1272--1273
+Overfull \hbox (9.0pt too wide) in paragraph at lines 1368--1369
  [][] 
  []
 
-<result_TwoMaster_OneMaster.pdf, id=152, 722.7pt x 433.62pt>
+<result_TwoMaster_OneMaster.pdf, id=155, 722.7pt x 433.62pt>
 File: result_TwoMaster_OneMaster.pdf Graphic file (type pdf)
 <use result_TwoMaster_OneMaster.pdf>
-Package pdftex.def Info: result_TwoMaster_OneMaster.pdf  used on input line 1279.
+Package pdftex.def Info: result_TwoMaster_OneMaster.pdf  used on input line 1375.
 (pdftex.def)             Requested size: 252.0pt x 151.20026pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1290--1291
+Underfull \hbox (badness 10000) in paragraph at lines 1386--1387
 [] $\OML/txmi/m/it/10 Concepts; Locations \OMS/txsy/m/n/10  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1303--1304
+Underfull \hbox (badness 10000) in paragraph at lines 1399--1400
 [] $\OML/txmi/m/it/10 NewQuery \OMS/txsy/m/n/10  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1308--1309
+Underfull \hbox (badness 10000) in paragraph at lines 1404--1405
 [] \T1/txr/m/n/10 (+20) Up-dateN-ode-Plat-form(Concepts, Lo-ca-tions,
  []
 
 
-Overfull \hbox (16.63287pt too wide) in paragraph at lines 1326--1329
+Overfull \hbox (16.63287pt too wide) in paragraph at lines 1422--1425
 []\T1/txr/bx/n/10 (-20) pro-ce-dure \T1/txr/m/sc/10 (-20) Con-struc-t-Query\T1/txr/m/n/10 (-20) ($\OML/txmi/m/it/10 Concept; Location; Entity; Range;$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1326--1329
+Underfull \hbox (badness 10000) in paragraph at lines 1422--1425
 \OML/txmi/m/it/10 hasAddition; ConceptNew; filterParam;$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1333--1334
+Underfull \hbox (badness 10000) in paragraph at lines 1429--1430
 []  \T1/cmtt/m/n/10 WHERE { {$\OML/txmi/m/it/10 Entity$\T1/cmtt/m/n/10 } concept:{$\OML/txmi/m/it/10 ConceptNew$\T1/cmtt/m/n/10 }
  []
 
-[10] [11 <./ConceptOnto_GraphViz_new.pdf> <./cityOnto_graph.pdf
+[11] [12 <./ConceptOnto_GraphViz_new.pdf> <./cityOnto_graph.pdf
 
 pdfTeX warning: pdflatex (file ./cityOnto_graph.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./result_TwoMaster_OneMaster.pdf>] [12] [13]
-<Time_execution_Q1Q2_StreamQR_NonLogarithmicAdjustment_LinearScale_Q1Q2.pdf, id=236, 867.24pt x 578.16pt>
+> <./result_TwoMaster_OneMaster.pdf>] [13] [14]
+<Time_execution_Q1Q2_StreamQR_NonLogarithmicAdjustment_LinearScale_Q1Q2.pdf, id=239, 867.24pt x 578.16pt>
 File: Time_execution_Q1Q2_StreamQR_NonLogarithmicAdjustment_LinearScale_Q1Q2.pdf Graphic file (type pdf)
 <use Time_execution_Q1Q2_StreamQR_NonLogarithmicAdjustment_LinearScale_Q1Q2.pdf>
-Package pdftex.def Info: Time_execution_Q1Q2_StreamQR_NonLogarithmicAdjustment_LinearScale_Q1Q2.pdf  used on input line 1581.
+Package pdftex.def Info: Time_execution_Q1Q2_StreamQR_NonLogarithmicAdjustment_LinearScale_Q1Q2.pdf  used on input line 1677.
 (pdftex.def)             Requested size: 201.60077pt x 134.39433pt.
-<Time_execution_Q1Q2_StreamQR_NonLogarithmicAdjustment_LogScale_Q1Q2.pdf, id=237, 867.24pt x 578.16pt>
+<Time_execution_Q1Q2_StreamQR_NonLogarithmicAdjustment_LogScale_Q1Q2.pdf, id=240, 867.24pt x 578.16pt>
 File: Time_execution_Q1Q2_StreamQR_NonLogarithmicAdjustment_LogScale_Q1Q2.pdf Graphic file (type pdf)
 <use Time_execution_Q1Q2_StreamQR_NonLogarithmicAdjustment_LogScale_Q1Q2.pdf>
-Package pdftex.def Info: Time_execution_Q1Q2_StreamQR_NonLogarithmicAdjustment_LogScale_Q1Q2.pdf  used on input line 1588.
+Package pdftex.def Info: Time_execution_Q1Q2_StreamQR_NonLogarithmicAdjustment_LogScale_Q1Q2.pdf  used on input line 1684.
 (pdftex.def)             Requested size: 201.60077pt x 134.39433pt.
-<Time_execution_Q1Q2_StreamQR_NonLogarithmicAdjustment_LinearScale_Q3Q4.pdf, id=238, 867.24pt x 578.16pt>
+<Time_execution_Q1Q2_StreamQR_NonLogarithmicAdjustment_LinearScale_Q3Q4.pdf, id=241, 867.24pt x 578.16pt>
 File: Time_execution_Q1Q2_StreamQR_NonLogarithmicAdjustment_LinearScale_Q3Q4.pdf Graphic file (type pdf)
 <use Time_execution_Q1Q2_StreamQR_NonLogarithmicAdjustment_LinearScale_Q3Q4.pdf>
-Package pdftex.def Info: Time_execution_Q1Q2_StreamQR_NonLogarithmicAdjustment_LinearScale_Q3Q4.pdf  used on input line 1595.
+Package pdftex.def Info: Time_execution_Q1Q2_StreamQR_NonLogarithmicAdjustment_LinearScale_Q3Q4.pdf  used on input line 1691.
 (pdftex.def)             Requested size: 201.60077pt x 134.39433pt.
-<Time_execution_Q1Q2_StreamQR_NonLogarithmicAdjustment_LogScale_Q3Q4.pdf, id=239, 867.24pt x 578.16pt>
+<Time_execution_Q1Q2_StreamQR_NonLogarithmicAdjustment_LogScale_Q3Q4.pdf, id=242, 867.24pt x 578.16pt>
 File: Time_execution_Q1Q2_StreamQR_NonLogarithmicAdjustment_LogScale_Q3Q4.pdf Graphic file (type pdf)
 <use Time_execution_Q1Q2_StreamQR_NonLogarithmicAdjustment_LogScale_Q3Q4.pdf>
-Package pdftex.def Info: Time_execution_Q1Q2_StreamQR_NonLogarithmicAdjustment_LogScale_Q3Q4.pdf  used on input line 1602.
+Package pdftex.def Info: Time_execution_Q1Q2_StreamQR_NonLogarithmicAdjustment_LogScale_Q3Q4.pdf  used on input line 1698.
 (pdftex.def)             Requested size: 201.60077pt x 134.39433pt.
- [14 <./Time_execution_Q1Q2_StreamQR_NonLogarithmicAdjustment_LinearScale_Q1Q2.pdf> <./Time_execution_Q1Q2_StreamQR_NonLogarithmicAdjustment_LogScale_Q1Q2.pdf> <./Time_execution_Q1Q2_StreamQR_NonLogarithmicAdjustment_LinearScale_Q3Q4.pdf> <./Time_execution_Q1Q2_StreamQR_NonLogarithmicAdjustment_LogScale_Q3Q4.pdf>]
-<Network_Usage_vs_Log_vs_Triples.pdf, id=449, 1300.86pt x 578.16pt>
+ [15 <./Time_execution_Q1Q2_StreamQR_NonLogarithmicAdjustment_LinearScale_Q1Q2.pdf> <./Time_execution_Q1Q2_StreamQR_NonLogarithmicAdjustment_LogScale_Q1Q2.pdf> <./Time_execution_Q1Q2_StreamQR_NonLogarithmicAdjustment_LinearScale_Q3Q4.pdf> <./Time_execution_Q1Q2_StreamQR_NonLogarithmicAdjustment_LogScale_Q3Q4.pdf>]
+<Network_Usage_vs_Log_vs_Triples.pdf, id=452, 1300.86pt x 578.16pt>
 File: Network_Usage_vs_Log_vs_Triples.pdf Graphic file (type pdf)
 <use Network_Usage_vs_Log_vs_Triples.pdf>
-Package pdftex.def Info: Network_Usage_vs_Log_vs_Triples.pdf  used on input line 1754.
+Package pdftex.def Info: Network_Usage_vs_Log_vs_Triples.pdf  used on input line 1850.
 (pdftex.def)             Requested size: 261.0pt x 116.00047pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 1754--1755
+Overfull \hbox (9.0pt too wide) in paragraph at lines 1850--1851
  [][] 
  []
 
-[15 <./Network_Usage_vs_Log_vs_Triples.pdf>]
-<Memory_Consumption_vs_Stream_Rate_Linear_Enhanced_Q1Q2.pdf, id=504, 867.24pt x 578.16pt>
+[16 <./Network_Usage_vs_Log_vs_Triples.pdf>]
+<Memory_Consumption_vs_Stream_Rate_Linear_Enhanced_Q1Q2.pdf, id=507, 867.24pt x 578.16pt>
 File: Memory_Consumption_vs_Stream_Rate_Linear_Enhanced_Q1Q2.pdf Graphic file (type pdf)
 <use Memory_Consumption_vs_Stream_Rate_Linear_Enhanced_Q1Q2.pdf>
-Package pdftex.def Info: Memory_Consumption_vs_Stream_Rate_Linear_Enhanced_Q1Q2.pdf  used on input line 1806.
+Package pdftex.def Info: Memory_Consumption_vs_Stream_Rate_Linear_Enhanced_Q1Q2.pdf  used on input line 1902.
 (pdftex.def)             Requested size: 201.60077pt x 134.39433pt.
-<Memory_Consumption_vs_Stream_Rate_Log_Enhanced_Q1Q2.pdf, id=505, 867.24pt x 578.16pt>
+<Memory_Consumption_vs_Stream_Rate_Log_Enhanced_Q1Q2.pdf, id=508, 867.24pt x 578.16pt>
 File: Memory_Consumption_vs_Stream_Rate_Log_Enhanced_Q1Q2.pdf Graphic file (type pdf)
 <use Memory_Consumption_vs_Stream_Rate_Log_Enhanced_Q1Q2.pdf>
-Package pdftex.def Info: Memory_Consumption_vs_Stream_Rate_Log_Enhanced_Q1Q2.pdf  used on input line 1813.
+Package pdftex.def Info: Memory_Consumption_vs_Stream_Rate_Log_Enhanced_Q1Q2.pdf  used on input line 1909.
 (pdftex.def)             Requested size: 201.60077pt x 134.39433pt.
-<Memory_Consumption_vs_Stream_Rate_Linear_Enhanced_Q3Q4.pdf, id=506, 867.24pt x 578.16pt>
+<Memory_Consumption_vs_Stream_Rate_Linear_Enhanced_Q3Q4.pdf, id=509, 867.24pt x 578.16pt>
 File: Memory_Consumption_vs_Stream_Rate_Linear_Enhanced_Q3Q4.pdf Graphic file (type pdf)
 <use Memory_Consumption_vs_Stream_Rate_Linear_Enhanced_Q3Q4.pdf>
-Package pdftex.def Info: Memory_Consumption_vs_Stream_Rate_Linear_Enhanced_Q3Q4.pdf  used on input line 1820.
+Package pdftex.def Info: Memory_Consumption_vs_Stream_Rate_Linear_Enhanced_Q3Q4.pdf  used on input line 1916.
 (pdftex.def)             Requested size: 201.60077pt x 134.39433pt.
-<Memory_Consumption_vs_Stream_Rate_Log_Enhanced_Q3Q4.pdf, id=507, 867.24pt x 578.16pt>
+<Memory_Consumption_vs_Stream_Rate_Log_Enhanced_Q3Q4.pdf, id=510, 867.24pt x 578.16pt>
 File: Memory_Consumption_vs_Stream_Rate_Log_Enhanced_Q3Q4.pdf Graphic file (type pdf)
 <use Memory_Consumption_vs_Stream_Rate_Log_Enhanced_Q3Q4.pdf>
-Package pdftex.def Info: Memory_Consumption_vs_Stream_Rate_Log_Enhanced_Q3Q4.pdf  used on input line 1827.
+Package pdftex.def Info: Memory_Consumption_vs_Stream_Rate_Log_Enhanced_Q3Q4.pdf  used on input line 1923.
 (pdftex.def)             Requested size: 201.60077pt x 134.39433pt.
- [16 <./Memory_Consumption_vs_Stream_Rate_Linear_Enhanced_Q1Q2.pdf> <./Memory_Consumption_vs_Stream_Rate_Log_Enhanced_Q1Q2.pdf> <./Memory_Consumption_vs_Stream_Rate_Linear_Enhanced_Q3Q4.pdf> <./Memory_Consumption_vs_Stream_Rate_Log_Enhanced_Q3Q4.pdf>] (DiSIF_DigitalTwin_0601.bbl) [17]
-Overfull \hbox (5.1872pt too wide) in paragraph at lines 2003--2003
+ [17 <./Memory_Consumption_vs_Stream_Rate_Linear_Enhanced_Q1Q2.pdf> <./Memory_Consumption_vs_Stream_Rate_Log_Enhanced_Q1Q2.pdf> <./Memory_Consumption_vs_Stream_Rate_Linear_Enhanced_Q3Q4.pdf> <./Memory_Consumption_vs_Stream_Rate_Log_Enhanced_Q3Q4.pdf>] (DiSIF_DigitalTwin_0601.bbl) [18]
+Overfull \hbox (5.1872pt too wide) in paragraph at lines 2099--2099
 []\T1/cmtt/m/n/10 FROM STREAM <https://www.wtlab.com/TrafficStream>[] 
  []
 
 
-Overfull \hbox (5.1872pt too wide) in paragraph at lines 2029--2029
+Overfull \hbox (5.1872pt too wide) in paragraph at lines 2125--2125
 []      \T1/cmtt/m/n/10 ?location concept:congestion "congestion" .[] 
  []
 
 
-Overfull \hbox (26.18207pt too wide) in paragraph at lines 2029--2029
+Overfull \hbox (26.18207pt too wide) in paragraph at lines 2125--2125
 []    \T1/cmtt/m/n/10 FROM STREAM <https://www.wtlab.com/TrafficStream>[] 
  []
 
 
-Overfull \hbox (5.1872pt too wide) in paragraph at lines 2060--2060
+Overfull \hbox (5.1872pt too wide) in paragraph at lines 2156--2156
 []\T1/cmtt/m/n/10 FROM STREAM <https://www.wtlab.com/TrafficStream>[] 
  []
 
 
-Overfull \hbox (5.1872pt too wide) in paragraph at lines 2100--2100
+Overfull \hbox (5.1872pt too wide) in paragraph at lines 2196--2196
 []\T1/cmtt/m/n/10 FROM STREAM <https://www.wtlab.com/TrafficStream>[] 
  []
 
-[18]
+[19]
 
 Package natbib Warning: There were undefined citations.
 
@@ -1276,7 +1282,7 @@ Package natbib Warning: There were undefined citations.
 Package caption Warning: Unused \captionsetup[sub] on input line 9.
 See the caption package documentation for explanation.
 
-[19
+[20
 
 ] (DiSIF_DigitalTwin_0601.aux)
  ***********
@@ -1293,9 +1299,9 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  94i,10n,93p,1093b,517s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\ramin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt0900.pk> <C:\Users\ramin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\ramin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt0800.pk><C:/Users/ramin/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtcxr.pfb><C:/Users/ramin/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxb.pfb><C:/Users/ramin/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxi.pfb><C:/Users/ramin/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxmi.pfb><C:/Users/ramin/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxr.pfb><C:/Users/ramin/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxsc.pfb><C:/Users/ramin/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txex.pfb><C:/Users/ramin/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txsy.pfb><C:/Users/ramin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/ramin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/ramin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb><C:/Users/ramin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on DiSIF_DigitalTwin_0601.pdf (19 pages, 4670657 bytes).
+Output written on DiSIF_DigitalTwin_0601.pdf (20 pages, 4675379 bytes).
 PDF statistics:
- 915 PDF objects out of 1000 (max. 8388607)
+ 918 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  85612 words of extra memory for PDF output out of 89155 (max. 10000000)
 
