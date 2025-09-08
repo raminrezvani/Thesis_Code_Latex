@@ -26,7 +26,7 @@
 \journal{Future Generation Computer Systems}
 \begin{document}
 \begin{frontmatter}
-\title{DiSIF: Enhancing Digital Twins of Cities with Distributed Semantic Fusion and EdgeAI Optimization}
+\title{DiSIF: Enhancing Digital Twins with Distributed Semantic Fusion and EdgeAI Optimization}
 \author{Ramin Rezvani-KhorashadiZadeh}
 \ead{ra.rezvanikhorashadizadeh@mail.um.ac.ir}
 \author{Mohsen Kahani\corref{cor1}}
@@ -34,34 +34,30 @@
 \address{Department of Computer Engineering, Ferdowsi University of Mashhad, Mashhad, Iran }
 \cortext[cor1]{Corresponding author}
 \begin{abstract}
- The advent of the Internet of Things (IoT) has accelerated the development of Digital 
- Twins of Cities—virtual replicas of urban environments that enable real-time monitoring,
-  analysis, and decision-making by integrating heterogeneous and high-velocity data streams
-   from diverse sources. Managing these massive, heterogeneous data streams presents 
-   critical challenges including data fusion, scalability, privacy, and timely query
-    execution. In this paper, we propose DiSIF (Distributed Semantic Information Fusion
-     Framework), a novel architecture tailored for the Digital Twin of a City paradigm. 
-     DiSIF leverages semantic data models and RDF stream processing within a distributed semantic JDL
-      fusion framework deployed across edge, fog, and cloud layers. This multi-layered 
-      design enables localized low-level data processing at the edge, significantly reducing
-       raw data transmission and enhancing privacy. Horizontal fusion is performed by a
-        multi-agent system (MAS) within each layer to improve processing speed and efficiency,
-         where EdgeAI—utilizing Small Language Models (SmallLLMs)—plays a pivotal role. Specifically,
-          EdgeAI enables the master agent to rewrite complex queries into independent 
-          sub-queries based on distinct data streams, distributing them to worker agents
-           for parallel execution. The results are then aggregated by the master agent,
-            where EdgeAI generates a consolidated query to integrate the sub-query outputs
-             into a final response, optimizing processing speed. Vertical fusion is conducted across
-              distributed JDL layers to optimize bandwidth and computational resources, with EdgeAI
-               leveraging the ConceptOnto ontology to rewrite queries—transforming them between
-                levels such as situation refinement and object refinement and vice versa—ensuring
-                 seamless concept transformation and semantic coherence across edge, fog, and cloud
-                  layers. DiSIF also supports parallel execution of complex and dependent queries,
-                   substantially improving response times and resource utilization compared to 
-                   centralized fusion models. Extensive evaluations in realistic urban scenarios
-                    demonstrate that DiSIF, enhanced by EdgeAI, significantly enhances network 
-                    efficiency, query performance, and scalability, making it a robust solution
-                     for advancing smart urban governance.
+  The Internet of Things (IoT) has accelerated the rise of Digital Twins,
+   enabling real-time monitoring and decision-making through heterogeneous,
+    high-velocity data streams. Managing these streams raises challenges in 
+    data fusion, scalability, privacy, and timely query execution. This paper 
+    introduces DiSIF (Distributed Semantic Information Fusion Framework), 
+    a three-layer architecture (edge, fog, cloud) that leverages semantic data models,
+     RDF stream processing, and a distributed JDL fusion model.
+     Horizontal fusion—parallel query execution within each layer using a multi-agent system—is
+      enhanced by EdgeAI, which employs SmallLLMs to rewrite complex queries into
+       independent sub-queries, distribute them among worker agents, and then generate 
+       a consolidated query for integrating results. 
+       Vertical fusion—concept transformation across layers using ConceptOnto—is
+        also supported by EdgeAI, which dynamically rewrites queries between abstraction levels
+         (e.g., object to situation refinement) to ensure semantic coherence and smooth
+          propagation of insights across edge, fog, and cloud.
+           The JDL layers are structured as: (1) edge for object refinement, 
+           (2) fog for situation refinement, and (3) cloud for threat refinement.
+            DiSIF, enhanced with EdgeAI, supports parallel execution of
+             complex queries, optimizes bandwidth and computation,
+              and preserves privacy. Evaluations in realistic scenarios demonstrate 
+              significant improvements in efficiency, query performance,
+               and scalability, making DiSIF a robust solution for smart urban governance.
+
+  
 \end{abstract}
 \begin{keyword}
 semantic JDL, data fusion, fog computing, stream processing, RSP agent, EdgeAI, SmallLLM.
@@ -69,10 +65,10 @@ semantic JDL, data fusion, fog computing, stream processing, RSP agent, EdgeAI, 
 \end{frontmatter}
 \section{Introduction}
 
-Data fusion is a critical process in Digital Twins of Cities,
+Data fusion is a critical process in Digital Twins,
 where multiple data sources from various applications need to
 be integrated to improve decision-making and extract valuable
-insights. Digital Twins of Cities represent virtual replicas of
+insights. Digital Twins represent virtual replicas of
 urban environments that continuously ingest and analyze hetero
 geneous data streams to provide real-time situational awareness
 and predictive capabilities. By combining data from multiple
@@ -83,7 +79,7 @@ stability, increases accuracy, reduces uncertainty, and lowers
 costs, all of which are essential for the complex and dynamic
 nature of Digital Twin environments.
 
-However, a major challenge in Digital Twins of Cities is
+However, a major challenge in Digital Twins is
 the heterogeneity of data sources. Data differences in syntax,
 structure (schema), and meaning (semantics) can lead to issues
 during fusion, creating semantic conflicts and reducing system
@@ -108,7 +104,7 @@ A pivotal component enhancing the DiSIF framework is EdgeAI,
       situation refinement or vice versa, ensuring semantic coherence and
        enabling advanced analytics in the fog and cloud layers. This integration
         underscores DiSIF’s capability to address the challenges of 
-        heterogeneity, scalability, and real-time performance in Digital Twins of Cities.
+        heterogeneity, scalability, and real-time performance in Digital Twins.
 
 
 The development and real-time maintenance of Digital Twins
@@ -122,7 +118,7 @@ The development and real-time maintenance of Digital Twins
  sensors and weather APIs—complicates integration, often resulting in semantic conflicts that undermine the accuracy and
  coherence of the Digital Twin. 
  
- To address the analytical challenges in Digital Twins of Cities, two critical issues must be tackled.
+ To address the analytical challenges in Digital Twins, two critical issues must be tackled.
  First, heterogeneous concepts arise as many analyses require generating new data types distinct from raw sensor inputs,
   necessitating conceptual transformations to support query execution. For example,
    raw vehicle movement data must be transformed into higher-level concepts
@@ -138,10 +134,10 @@ The Distributed Semantic Information Fusion Framework (DiSIF) addresses these ch
  fusion across layers to create new concepts and horizontal fusion within layers for parallel query execution,
   DiSIF ensures efficient, scalable, and privacy-preserving data processing. This approach significantly improves query
    performance and resource utilization compared to traditional centralized models, making DiSIF a robust solution for
-    operationalizing Digital Twins of Cities.
+    operationalizing Digital Twins.
 
     Centralized data fusion models are inherently inefficient
-    for large-scale Digital Twins of Cities due to several critical
+    for large-scale Digital Twins due to several critical
     challenges. The massive data volumes generated by urban IoT
     sensors, such as traffic and weather streams, lead to network
     inefficiencies as all data must be transmitted to a single process
@@ -159,7 +155,7 @@ The Distributed Semantic Information Fusion Framework (DiSIF) addresses these ch
    tal Twin operations.
 
    To overcome the challenges of data volume, velocity, and
-   heterogeneity in Digital Twins of Cities, the DiSIF framework in
+   heterogeneity in Digital Twins, the DiSIF framework in
   troduces a distributed three-layer architecture comprising edge,
    fog, and cloud layers. This architecture enhances efficiency
    and scalability by processing high-volume, real-time IoT data
@@ -179,7 +175,7 @@ The Distributed Semantic Information Fusion Framework (DiSIF) addresses these ch
   of heterogeneous data using Semantic Web technology such as
   RDFstream processing. This model can be implemented using
   centralized, distributed, or hybrid architectures. However, in
-  Digital Twins of Cities, the traditional centralized semantic JDL
+  Digital Twins, the traditional centralized semantic JDL
   model, where data is fused at a single node, faces challenges due
   to the vast data volume and the need for multi-layered decision
  making. This centralized approach is inefficient for large-scale
@@ -192,7 +188,7 @@ The Distributed Semantic Information Fusion Framework (DiSIF) addresses these ch
    layers. The edge layer handles time-sensitive decisions close
    to data sources, while the fog and cloud layers process more
    complex and macro-level decisions. This distributed architec
-  ture aligns with the layered nature of Digital Twins of Cities,
+  ture aligns with the layered nature of Digital Twins,
    enabling scalable, privacy-preserving, and efficient data fusion
    and decision-making.
 
@@ -220,8 +216,8 @@ The Distributed Semantic Information Fusion Framework (DiSIF) addresses these ch
  avoids transmission of raw data, preserving privacy—a
  critical concern in urban Digital Twin deployments.
 
- \item Leveraging EdgeAI for Enhanced Efficiency: The integration
-  of EdgeAI, powered by Small Language Models (SmallLLMs), further 
+ \item Leveraging EdgeAI for Enhanced Efficiency: 
+  The integrationof EdgeAI, powered by Small Language Models (SmallLLMs), further 
   strengthens DiSIF by enabling intelligent query decomposition and aggregation.
    EdgeAI allows the master agent to rewrite complex queries into optimized
     sub-queries tailored to specific data streams, enhancing parallel processing
@@ -235,7 +231,7 @@ The Distributed Semantic Information Fusion Framework (DiSIF) addresses these ch
 
    As stated earlier, the primary goal of this article is to present
  a distributed version of the semantic JDL fusion model tailored
- for Digital Twins of Cities. While various advancements have
+ for Digital Twins. While various advancements have
  been made in different aspects of JDL fusion models, a fully
  distributed approach optimized for the scale, complexity, and
  real-time requirements of Digital Twins has not been explored
@@ -246,7 +242,7 @@ The Distributed Semantic Information Fusion Framework (DiSIF) addresses these ch
   
   The Distributed Semantic Information Fusion Framework (DiSIF) implements
    a three-layer (edge, fog, and cloud) JDL fusion model to support hierarchical
-    decision-making in Digital Twins of Cities. This architecture enables
+    decision-making in Digital Twins. This architecture enables
      micro- and small-scale decisions at lower layers to be fused into macro-level 
      decisions at higher layers, aligning with the distributed nature of urban
       environments. DiSIF outperforms traditional centralized JDL fusion models
@@ -284,7 +280,7 @@ The Distributed Semantic Information Fusion Framework (DiSIF) addresses these ch
     the MAS drives parallel and independent fusion operations,
      significantly improving processing speed and scalability
       compared to centralized models, making DiSIF a robust solution
-       for Digital Twins of Cities.
+       for Digital Twins.
 
 
   \item Deployment of Multi-Agent System (MAS) in Each Layer
@@ -706,7 +702,7 @@ real-time monitoring and management.
 The DiSIF framework consists of three
  hierarchical layers—edge, fog, and cloud—engineered
   to facilitate both time-sensitive and complex dependent decision-making processes in
-  IoT applications that underpin Digital Twins of Cities. This layered design enables progressive
+  IoT applications that underpin Digital Twins. This layered design enables progressive
    data processing and fusion aligned with the multi-scale and multi-domain nature
     of urban digital replicas. We analyze the DiSIF framework’s layers from two 
     complementary perspectives: the semantic JDL fusion model and the fusion process itself.
@@ -1220,7 +1216,7 @@ EdgeAI, powered by Small Language Models (SmallLLMs),
        returned to the master agent, where EdgeAI generates a consolidated query to
         aggregate the outputs, producing a final response. This intelligent
          decomposition and aggregation process significantly boosts processing speed
-          and efficiency, aligning with the real-time demands of Digital Twins of Cities.
+          and efficiency, aligning with the real-time demands of Digital Twins.
 
 \subsubsection{Role of EdgeAI in Vertical Fusion Across Layers}
 
@@ -1246,7 +1242,7 @@ The incorporation of EdgeAI into DiSIF offers several key advantages.
      Lastly, EdgeAI strengthens privacy by limiting the transmission of raw data, 
      relying instead on SmallLLMs for initial processing at the edge, which aligns 
      with DiSIF’s privacy-preserving design and addresses the security concerns
-      associated with centralized data handling in Digital Twins of Cities.
+      associated with centralized data handling in Digital Twins.
 
 
 
