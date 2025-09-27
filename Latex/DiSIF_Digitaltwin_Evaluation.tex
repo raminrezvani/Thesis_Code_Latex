@@ -23,6 +23,7 @@
 \usepackage{adjustbox}
 \usepackage{listings}
 \usepackage{placeins}
+\usepackage{float}
 \lstset{
     language=SPARQL,  % زبان را به SPARQL تنظیم کنید (یا اگر نیاز به هایلایت خاص دارید، سفارشی کنید)
     basicstyle=\footnotesize\ttfamily,
@@ -35,16 +36,41 @@
 \journal{Future Generation Computer Systems}
 \begin{document}
 
-\section{Introduction}
-Data fusion is a critical \cite{noughabi2013semfus} process in Digital Twins,
-where multiple data sources from various applications need to
-be integrated to improve decision-making and extract valuable
-insights. Digital Twins represent virtual replicas of
+\section{Evaluation Parameters}
+In this study, we evaluate the performance 
+of centralized and distributed processing pipelines for semantic traffic data refinement using key parameters that capture scalability, efficiency, and resource utilization. These parameters are derived from the experimental setup in the provided code, which simulates varying input rates and query complexities. The evaluation focuses on two primary metrics—processing duration and peak memory usage—measured across different query variants (simple, medium, and complex) for the Q2 situation refinement query. Below, we detail the parameters used in the assessment,
+ including their definitions, ranges, and roles in the experiments.
+
+\begin{itemize}
+    \item Input Rate (Triples per Second)
+    
+    The input rate represents the velocity of incoming RDF triples (e.g., vehicle observations) into the system, simulating real-time traffic data streams. It is varied from 100 to 2000 triples per second in the experiments to test system behavior under increasing load. Lower rates (e.g., 100-500 triples/sec) mimic low-traffic scenarios, while higher rates (e.g., 1500-2000 triples/sec) emulate peak-hour congestion. This parameter induces backpressure in the pipelines, particularly in the centralized mode, where bounded buses and delays amplify processing challenges. The code enforces rate limiting in the producer threads to ensure consistent throughput, allowing direct comparison of how each architecture handles data ingestion scalability.
+
+    \item Processing Duration (Seconds)
+    
+    This metric quantifies the total time required to process the input stream from the first raw triple consumption to the completion of Q2 situation refinement, excluding triple generation. It includes latencies from query execution (e.g., SPARQL aggregations in RDFlib), data transfers via buses, and simulated delays. In the centralized pipeline, durations are influenced by sequential processing and extra system-wide delays proportional to the input rate (mapped from 1-5 seconds for rates between 1000-5000 triples/sec). The distributed pipeline uses smaller delays (0.5-2.5 seconds) to reflect parallel efficiencies. Results show linear increases in duration for centralized modes with complex queries, highlighting bottlenecks in graph building and aggregation.
+
+    \item Peak Memory Usage (Megabytes)
+    
+    Peak memory measures the maximum resident set size (RSS) in megabytes during execution, capturing the memory footprint of graph construction, bus buffering, and query processing. It is tracked using utility functions (e.g., measure_run) that monitor resource consumption. In centralized runs, additional simulated memory hogs (e.g., 10 MB bytearrays in Q2) model heavy query overheads, leading to higher initial footprints (10-16 MB) that stabilize or decline with batching efficiencies. Distributed runs maintain lower usage (2-4 MB) due to batched transfers and unlimited bus capacities in some configurations. This parameter is crucial for assessing suitability in resource-constrained environments, such as edge devices in smart city deployments.
+
+    \item Query Variants
+    
+    The Q2 query is tested in three variants to evaluate complexity impacts:
+
+    \textbf{Simple}: Basic single-level aggregation with a HAVING clause, minimizing nesting for efficiency.
+    \textbf{Medium}: Introduces a subquery for pre-aggregation and filtering, adding modularity at moderate cost.
+    \textbf{Complex}: Multi-layered with VALUES, FILTER EXISTS, and nested subqueries computing both SUM and AVG, simulating advanced semantic reasoning with validation checks.
+    
+
+These variants allow isolation of SPARQL overhead effects on metrics, with complex versions showing steeper duration increases in centralized setups.
 
 
-Q1:
+\end{itemize}
 
-\begin{lstlisting}[caption={Query for q1\_vehicle\_count\_observations}, float=H]
+\section{Query Q1}
+
+\begin{lstlisting}[caption={Query for q1\_vehicle\_count\_observations}, float=H, label={lst:q1}]
     PREFIX traffic: <http://example.org/traffic#>
     PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     SELECT ?location (COUNT(?vehicle) AS ?vehicleCount)
@@ -58,9 +84,9 @@ Q1:
 
 \section{Query q2_situation_refinement_over_graph_simple}
 
-This query represents a straightforward situation refinement process in a
+Query \ref{} represents a straightforward situation refinement process in a
  traffic knowledge graph. It aggregates vehicle count observations by location using the SUM function on the traffic:hasVehicleCount values, filtered to only include observations of type "VehicleCount". A HAVING clause applies a threshold (e.g., greater than 100) to detect high-traffic conditions, emitting triples for "TrafficJam" situations when the sum exceeds the limit. This simple structure is efficient for basic aggregation tasks and avoids nested queries, making it suitable for resource-constrained environments or initial prototyping in semantic web applications focused on real-time traffic analysis.
-\begin{lstlisting}[caption={Query for q2\_situation\_refinement\_over\_graph\_simple}, float=H]
+\begin{lstlisting}[caption={Query for q2\_situation\_refinement\_over\_graph\_simple}, float=H, label={lst:q2-simple}]
     PREFIX traffic: <http://example.org/traffic#>
     PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     SELECT ?location (SUM(xsd:integer(?vc)) AS ?total)
@@ -78,7 +104,7 @@ This query represents a straightforward situation refinement process in a
 \section{Query q2_situation_refinement_over_graph_medium}
 
 Building on the simple version, this intermediate SPARQL query introduces a subquery for pre-aggregation of vehicle counts per location. It first computes the sum of vehicle counts within the inner SELECT, applying a FILTER to ensure the observation type matches "VehicleCount", then groups by location and filters totals exceeding the threshold via a HAVING clause in the outer scope. This nested approach enhances modularity, allowing for easier extension (e.g., adding more filters) while maintaining clarity. It is ideal for scenarios requiring layered reasoning in ontologies, such as refining traffic situations from aggregated observations in intelligent transportation systems.
-\begin{lstlisting}[caption={Query for q2\_situation\_refinement\_over\_graph\_medium}, float=H]
+\begin{lstlisting}[caption={Query for q2\_situation\_refinement\_over\_graph\_medium}, float=H, label={lst:q2-medium}]
         PREFIX traffic: <http://example.org/traffic#>
         PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         SELECT ?location ?total
@@ -101,7 +127,7 @@ Building on the simple version, this intermediate SPARQL query introduces a subq
 
 This advanced SPARQL query employs a multi-layered structure for robust situation refinement, incorporating VALUES to restrict observation types, FILTER EXISTS to validate entity shapes (e.g., ensuring locations are properly linked), and nested subqueries for computing both SUM and AVG aggregates on vehicle counts. The innermost subquery casts counts to integers and applies filters, while the outer layers group by location and enforce the threshold via HAVING on the sum. Although it includes an unused average for illustration, this complexity supports sophisticated validation and multi-metric analysis, making it suitable for high-fidelity applications in semantic reasoning, such as detecting traffic jams with additional quality checks in dynamic urban ontologies.
 
-\begin{lstlisting}[caption={Query for q2\_situation\_refinement\_over\_graph\_complex}, float=H]
+\begin{lstlisting}[caption={Query for q2\_situation\_refinement\_over\_graph\_complex}, float=H, label={lst:q2-complex}]
     PREFIX traffic: <http://example.org/traffic#>
     PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     SELECT ?location ?total
@@ -133,17 +159,21 @@ This advanced SPARQL query employs a multi-layered structure for robust situatio
 \begin{figure}[t]
     \centering
     \includegraphics[width=\columnwidth]{C:/performance_results/rate_sweep_peak_memory.png}
-    \caption{The semantic JDL model \cite{noughabi2013semfus}}
-    \label{fig:semantidJDL}
+    \caption{Memory Consumption}
+    \label{fig:MemoryConsumption}
   \end{figure}
 
+Figure \ref{fig:MemoryConsumption} illustrates the peak memory usage as a function of input rate for different variants of the Q2 query in both centralized and distributed processing modes. In the centralized approach, memory consumption starts relatively high (around 12-16 MB) at lower input rates (250 triples/sec) and exhibits a gradual decline as the input rate increases to 2000 triples/sec, potentially due to optimizations in graph management or reduced overhead from batching in RDFlib. The complex variant (purple line) shows the highest initial memory footprint, followed by the medium (green) and simple (blue) variants. In contrast, the distributed approach demonstrates significantly lower and more stable memory usage (typically 2-4 MB across all rates), with minimal variation across variants (orange for simple, red for medium, brown for complex). This highlights the efficiency of the distributed model in handling scalable workloads, as it leverages bounded buses and batched processing to mitigate memory pressure, making it more suitable for resource-constrained environments.
 
-  \begin{figure}[t]
-    \centering
-    \includegraphics[width=\columnwidth]{C:/performance_results/rate_sweep_processing_duration.png}
-    \caption{The semantic JDL model \cite{noughabi2013semfus}}
-    \label{fig:semantidJDL1}
-  \end{figure}
+  
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{C:/performance_results/rate_sweep_processing_duration.png}
+    \caption{Execution Time of Queries}
+\label{fig:ExecutionTime}
+\end{figure}
+
+Figure \ref{fig:ExecutionTime} depicts the processing duration versus input rate for the same Q2 query variants. For the centralized mode, durations increase notably with higher input rates, particularly for the medium (green) and complex (purple) variants, rising from approximately 2-4 seconds at 250 triples/sec to over 12 seconds at 2000 triples/sec. This escalation suggests growing computational overhead from SPARQL aggregations and subqueries in RDFlib as data volume scales. The simple variant (blue) remains comparatively efficient, with durations stabilizing around 4 seconds. Conversely, the distributed mode maintains low and nearly linear durations (under 4 seconds even at peak rates) across all variants (orange, red, and brown lines), benefiting from parallelized worker-master pipelines and efficient bus-based data transfer. These results underscore the distributed system's superior scalability, especially for complex queries, by distributing load and reducing backpressure compared to the centralized baseline.
 
 
 \bibliographystyle{plain}
