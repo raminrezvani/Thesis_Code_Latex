@@ -22,12 +22,14 @@
 \usepackage{caption}
 \usepackage{adjustbox}
 \usepackage{listings}
+\usepackage{placeins}
 \lstset{
     language=SPARQL,  % زبان را به SPARQL تنظیم کنید (یا اگر نیاز به هایلایت خاص دارید، سفارشی کنید)
     basicstyle=\footnotesize\ttfamily,
     frame=single,
     breaklines=true,
-    tabsize=2
+    tabsize=2,
+    floatplacement=H
 }
 
 \journal{Future Generation Computer Systems}
@@ -42,7 +44,7 @@ insights. Digital Twins represent virtual replicas of
 
 Q1:
 
-\begin{lstlisting}[caption={Query for q1\_vehicle\_count\_observations}]
+\begin{lstlisting}[caption={Query for q1\_vehicle\_count\_observations}, float=H]
     PREFIX traffic: <http://example.org/traffic#>
     PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     SELECT ?location (COUNT(?vehicle) AS ?vehicleCount)
@@ -58,7 +60,7 @@ Q1:
 
 This query represents a straightforward situation refinement process in a
  traffic knowledge graph. It aggregates vehicle count observations by location using the SUM function on the traffic:hasVehicleCount values, filtered to only include observations of type "VehicleCount". A HAVING clause applies a threshold (e.g., greater than 100) to detect high-traffic conditions, emitting triples for "TrafficJam" situations when the sum exceeds the limit. This simple structure is efficient for basic aggregation tasks and avoids nested queries, making it suitable for resource-constrained environments or initial prototyping in semantic web applications focused on real-time traffic analysis.
-\begin{lstlisting}[caption={Query for q2_situation_refinement_over_graph_simple}]
+\begin{lstlisting}[caption={Query for q2\_situation\_refinement\_over\_graph\_simple}, float=H]
     PREFIX traffic: <http://example.org/traffic#>
     PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     SELECT ?location (SUM(xsd:integer(?vc)) AS ?total)
@@ -76,7 +78,7 @@ This query represents a straightforward situation refinement process in a
 \section{Query q2_situation_refinement_over_graph_medium}
 
 Building on the simple version, this intermediate SPARQL query introduces a subquery for pre-aggregation of vehicle counts per location. It first computes the sum of vehicle counts within the inner SELECT, applying a FILTER to ensure the observation type matches "VehicleCount", then groups by location and filters totals exceeding the threshold via a HAVING clause in the outer scope. This nested approach enhances modularity, allowing for easier extension (e.g., adding more filters) while maintaining clarity. It is ideal for scenarios requiring layered reasoning in ontologies, such as refining traffic situations from aggregated observations in intelligent transportation systems.
-\begin{lstlisting}[caption={Query for q2_situation_refinement_over_graph_medium}]
+\begin{lstlisting}[caption={Query for q2\_situation\_refinement\_over\_graph\_medium}, float=H]
         PREFIX traffic: <http://example.org/traffic#>
         PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         SELECT ?location ?total
@@ -99,7 +101,7 @@ Building on the simple version, this intermediate SPARQL query introduces a subq
 
 This advanced SPARQL query employs a multi-layered structure for robust situation refinement, incorporating VALUES to restrict observation types, FILTER EXISTS to validate entity shapes (e.g., ensuring locations are properly linked), and nested subqueries for computing both SUM and AVG aggregates on vehicle counts. The innermost subquery casts counts to integers and applies filters, while the outer layers group by location and enforce the threshold via HAVING on the sum. Although it includes an unused average for illustration, this complexity supports sophisticated validation and multi-metric analysis, making it suitable for high-fidelity applications in semantic reasoning, such as detecting traffic jams with additional quality checks in dynamic urban ontologies.
 
-\begin{lstlisting}[caption={Query for q2_situation_refinement_over_graph_complex}]
+\begin{lstlisting}[caption={Query for q2\_situation\_refinement\_over\_graph\_complex}, float=H]
     PREFIX traffic: <http://example.org/traffic#>
     PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     SELECT ?location ?total
@@ -128,7 +130,20 @@ This advanced SPARQL query employs a multi-layered structure for robust situatio
 \section{Results}
 
 
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=\columnwidth]{C:/performance_results/rate_sweep_peak_memory.png}
+    \caption{The semantic JDL model \cite{noughabi2013semfus}}
+    \label{fig:semantidJDL}
+  \end{figure}
 
+
+  \begin{figure}[t]
+    \centering
+    \includegraphics[width=\columnwidth]{C:/performance_results/rate_sweep_processing_duration.png}
+    \caption{The semantic JDL model \cite{noughabi2013semfus}}
+    \label{fig:semantidJDL1}
+  \end{figure}
 
 
 \bibliographystyle{plain}
