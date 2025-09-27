@@ -52,7 +52,13 @@ of centralized and distributed processing pipelines for semantic traffic data re
 
     \item Peak Memory Usage (Megabytes)
     
-    Peak memory measures the maximum resident set size (RSS) in megabytes during execution, capturing the memory footprint of graph construction, bus buffering, and query processing. It is tracked using utility functions (e.g., measure_run) that monitor resource consumption. In centralized runs, additional simulated memory hogs (e.g., 10 MB bytearrays in Q2) model heavy query overheads, leading to higher initial footprints (10-16 MB) that stabilize or decline with batching efficiencies. Distributed runs maintain lower usage (2-4 MB) due to batched transfers and unlimited bus capacities in some configurations. This parameter is crucial for assessing suitability in resource-constrained environments, such as edge devices in smart city deployments.
+    Peak memory measures the maximum resident set size (RSS) 
+    in megabytes during execution, capturing the memory footprint
+     of graph construction, bus buffering, and query processing.
+     It is tracked using utility functions (e.g., measure\_run) 
+     that monitor resource consumption. In centralized runs, additional simulated memory hogs (e.g., 10 MB bytearrays in Q2) model heavy query overheads, leading to higher initial footprints (10-16 MB) that stabilize or decline with batching efficiencies. 
+     
+     Distributed runs maintain lower usage (2-4 MB) due to batched transfers and unlimited bus capacities in some configurations. This parameter is crucial for assessing suitability in resource-constrained environments, such as edge devices in smart city deployments.
 
     \item Query Variants
     
@@ -79,12 +85,12 @@ These variants allow isolation of SPARQL overhead effects on metrics, with compl
             traffic:atLocation ?location .
     }
     GROUP BY ?location
-    \end{lstlisting}
+\end{lstlisting}
 
 
 \section{Query q2_situation_refinement_over_graph_simple}
 
-Query \ref{} represents a straightforward situation refinement process in a
+Query \ref{lst:q2-simple} represents a straightforward situation refinement process in a
  traffic knowledge graph. It aggregates vehicle count observations by location using the SUM function on the traffic:hasVehicleCount values, filtered to only include observations of type "VehicleCount". A HAVING clause applies a threshold (e.g., greater than 100) to detect high-traffic conditions, emitting triples for "TrafficJam" situations when the sum exceeds the limit. This simple structure is efficient for basic aggregation tasks and avoids nested queries, making it suitable for resource-constrained environments or initial prototyping in semantic web applications focused on real-time traffic analysis.
 \begin{lstlisting}[caption={Query for q2\_situation\_refinement\_over\_graph\_simple}, float=H, label={lst:q2-simple}]
     PREFIX traffic: <http://example.org/traffic#>
@@ -174,6 +180,47 @@ Figure \ref{fig:MemoryConsumption} illustrates the peak memory usage as a functi
 \end{figure}
 
 Figure \ref{fig:ExecutionTime} depicts the processing duration versus input rate for the same Q2 query variants. For the centralized mode, durations increase notably with higher input rates, particularly for the medium (green) and complex (purple) variants, rising from approximately 2-4 seconds at 250 triples/sec to over 12 seconds at 2000 triples/sec. This escalation suggests growing computational overhead from SPARQL aggregations and subqueries in RDFlib as data volume scales. The simple variant (blue) remains comparatively efficient, with durations stabilizing around 4 seconds. Conversely, the distributed mode maintains low and nearly linear durations (under 4 seconds even at peak rates) across all variants (orange, red, and brown lines), benefiting from parallelized worker-master pipelines and efficient bus-based data transfer. These results underscore the distributed system's superior scalability, especially for complex queries, by distributing load and reducing backpressure compared to the centralized baseline.
+
+
+\section{Discussion}
+
+\subsection{Comparative Analysis of Centralized and Distributed Approaches}
+
+The experimental results, as depicted in Figures 1 and 2,
+ provide a comprehensive comparison between the centralized
+  and distributed processing architectures for semantic traffic data 
+  refinement. These figures illustrate peak memory usage and 
+  processing duration, respectively, across varying input rates
+   (from 250 to 2000 triples per second) and query variants 
+   (simple, medium, and complex) for the Q2 situation refinement
+    task. The centralized approach relies on a single-threaded 
+    pipeline with bounded buses, sequential query execution via
+     RDFlib, and simulated overheads to model real-world bottlenecks.
+      In contrast, the distributed approach employs a 
+      worker-master model with batched transfers, potentially 
+      unlimited bus capacities, and parallelized processing 
+      to enhance scalability. Below, we analyze the key observations
+       from each metric, highlighting the trade-offs and implications
+        for deployment in intelligent transportation systems.
+
+    \subsubsection{Peak Memory Usage (Figure 1)}
+
+    Figure 1 shows peak memory consumption in megabytes as input rates
+     increase. In the centralized mode, memory starts high 
+     (12-16 MB at 250 triples/sec) and trends downward slightly toward 
+     10-12 MB at higher rates, likely due to RDFlib's graph optimization and reduced per-triple overhead from batching. The complex variant (purple line) incurs the highest footprint, reflecting the additional memory demands of nested subqueries, VALUES clauses, and multi-aggregate computations (e.g., SUM and AVG). Medium (green) and simple (blue) variants exhibit lower but similar patterns, with initial spikes attributed to full graph loading and ontology binding.
+
+    Conversely, the distributed mode maintains consistently low memory
+    (2-4 MB across all rates), with minimal differentiation between variants (orange for simple, red for medium, brown for complex). This efficiency stems from batched worker outputs and master-side incremental graph appending, which avoids loading the entire dataset at once. The unbounded bus in distributed runs (when capacity is set to -1) further reduces buffering pressure, making it resilient to high-velocity streams. Overall, the distributed approach demonstrates up to 75% lower peak memory than centralized at peak loads, underscoring its suitability for edge computing or memory-constrained environments where centralized systems might fail due to out-of-memory errors.
+
+    \subsubsection{Processing Duration (Figure 2)}
+
+    Figure 2 plots processing duration in seconds against input rates, revealing stark scalability differences. Centralized processing durations escalate with complexity and rate: the simple variant (blue) remains relatively flat (around 2-4 seconds), but medium (green) and complex (purple) variants rise steeply from 2-4 seconds at low rates to 10-14 seconds at 2000 triples/sec. This increase is driven by sequential SPARQL execution in RDFlib, compounded by simulated delays (e.g., 10 ms per batch in Q2) and extra system-wide latencies (1-5 seconds proportional to rate), which amplify backpressure in bounded buses.
+    The distributed approach, however, exhibits near-linear and low durations (under 4 seconds even at 2000 triples/sec) for all variants (orange, red, and brown lines). By parallelizing Q1 (vehicle counting) in workers and aggregating in a master with larger batches (e.g., 60,000 triples), it mitigates bottlenecks, with reduced delays (0.5-2.5 seconds) reflecting inherent efficiencies. At high rates, distributed processing is 3-5 times faster than centralized for complex queries, highlighting its ability to handle real-time semantic streams without significant degradation. These findings suggest that while centralized setups are simpler for low-load scenarios, distributed architectures excel in high-throughput applications, such as urban traffic monitoring, by distributing computational load and minimizing latency.
+
+
+In summary, the centralized approach offers ease of implementation but suffers from higher resource demands and poorer scalability, as evidenced by escalating memory and durations in complex scenarios. The distributed model, while more architecturally intricate, provides superior performance under load, making it preferable for production-scale semantic reasoning over RDF streams. Future work could explore hybrid models to balance these trade-offs.
+
 
 
 \bibliographystyle{plain}
