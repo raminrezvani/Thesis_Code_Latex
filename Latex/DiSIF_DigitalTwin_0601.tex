@@ -21,7 +21,14 @@
 \usepackage{booktabs}
 \usepackage{caption}
 \usepackage{adjustbox}
-
+\usepackage{listings}
+\lstset{
+    language=SPARQL,  % زبان را به SPARQL تنظیم کنید (یا اگر نیاز به هایلایت خاص دارید، سفارشی کنید)
+    basicstyle=\footnotesize\ttfamily,
+    frame=single,
+    breaklines=true,
+    tabsize=2
+}
 
 \journal{Future Generation Computer Systems}
 \begin{document}
@@ -64,7 +71,6 @@ semantic JDL, data fusion, fog computing, stream processing, RSP agent, EdgeAI, 
 \end{keyword}
 \end{frontmatter}
 \section{Introduction}
-
 Data fusion is a critical process in Digital Twins,
 where multiple data sources from various applications need to
 be integrated to improve decision-making and extract valuable
